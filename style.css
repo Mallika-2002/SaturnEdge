@@ -1,0 +1,167 @@
+
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: #181A27;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #181A27;
+}
+
+  /* Styling for the logo */
+.logo img{
+   height: 50px; /* Adjust the size as needed */
+    /* height: auto; */
+}
+
+  /* Styling for the navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.nav-links a{
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+}
+  /* Styling for the button */
+.btn {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background: var(--text-and-support, #35A29F);
+    cursor: pointer;
+}
+
+.container-1 h1{
+    color: #FFF;
+    margin:0px;
+text-align: center;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+padding-bottom: 0;
+}
+.gate{
+    color: #999;
+text-align: center;
+font-size: 12px;
+margin: 0;
+padding: 0;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* Styling for the icon wrapper */
+.icon-wrapper {
+    position: relative;
+    text-align: center;
+    margin: 13px 8px; /* Add space between the icons */
+}
+
+  /* Styling for the icons */
+.icon {
+    width: 100px; /* Adjust the size as needed */
+}
+
+  /* Styling for the content */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 9px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.saturn{
+    display: flex;
+    justify-content: center; /* Horizontally center-align the content */
+    align-items: center; /* Vertically center-align the content */
+    width:100vw;
+}
+.explore-container{
+    margin: 0;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(151, 254, 237, 1);
+    font-size: 15px;
+    font-weight: bold;
+    padding:14px;
+}
+.blue{
+    color:#35A29F;
+    line-height: normal;
+}
+.center-heading{
+    text-align: center;
+    font-size:26px;
+    font-weight: 900;
+    color:white;
+    margin-bottom: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-around;
+}
+
+.text {
+    color: var(--supportive, #FFF);
+    font-family: Codec Cold Trial;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.image {
+    width:247px;
+}
+.Boxes{
+    display: flex;
+    justify-content: space-around; /* Distribute boxes evenly */
+    align-items: center;
+    width: 100%;
+}
+
+.box {
+    width: 48%; /* Adjust the width as needed */
+    height: 200px;
+    background-color: black;
+    margin:20px;
+    /* border: 1px solid #000; */
+    box-sizing: border-box;
+}
+
+.moon{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    width:100%;
+    margin-top: 10px;
+}
+.moon-image{
+    width: 13%; /* Adjust the width as needed */
+    /* max-width: 100%;
+    height: auto; */
+}
+.moon-image1{
+    width:40%;
+}
