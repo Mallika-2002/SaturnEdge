@@ -1,167 +1,229 @@
-
+  @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@300&family=Martel+Sans&display=swap');
 body{
-    margin: 0px;
-    padding:0px;
+    margin: 0;
+    padding:0;
     background-color: #181A27;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:Martel Sans;
+    width:100vw;
+    height:100vh;
 }
+/* for image of saturn as background  */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    /* margin:0; */
+  }
+  
+  .container img{
+    width:100%;
+    text-align: center;
+  z-index: -1;
+  /* margin:0; */
+  }
 header {
+    width:100%;   /*Giving width of header as 100%*/
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    background-color: #181A27;
+    position: absolute;
+    top:2%;               /*space from top*/
 }
-
-  /* Styling for the logo */
 .logo img{
-   height: 50px; /* Adjust the size as needed */
-    /* height: auto; */
-}
-
-  /* Styling for the navigation links */
+    height: 6vw; /* Adjust the size as needed */
+ }
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 35px;
+    gap:14px;
 }
+/* Giving styling to navigation links */
 .nav-links a{
     text-decoration: none;
     color:white;
-    font-size: 12px;
+    font-size: 1.4vw;
 }
-  /* Styling for the button */
+/* on hover change in navigation links */
+.nav-links a:hover{
+    font-size:1.7vw;
+    text-shadow: 1vw 1vw 2vw rgba(223, 216, 216, 0.726);
+}
+/* Subscribe button */
 .btn {
-    padding: 10px 20px;
+    padding: 5px 8px;
     color: #fff;
     border: none;
     border-radius: 10px;
     background: var(--text-and-support, #35A29F);
     cursor: pointer;
+    font-size: 1.6vw;
 }
-
-.container-1 h1{
-    color: #FFF;
-    margin:0px;
-text-align: center;
-font-size: 36px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-padding-bottom: 0;
-}
-.gate{
-    color: #999;
-text-align: center;
-font-size: 12px;
-margin: 0;
-padding: 0;
-}
-.icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-  /* Styling for the icon wrapper */
-.icon-wrapper {
-    position: relative;
+/* Text on image */
+  .saturn{
+    position:absolute;
+    top:26%;
+    left:4%;
+    font-size:5vw;
+    font-weight: 800;
+  }
+  /* Text on image */
+  .saturn1{
+    position:absolute;
+    top:35%;
+    left:9%;
+    font-size: 5vw;
+    font-weight: 800;
+  }
+  /* text on image */
+  .gate{
     text-align: center;
-    margin: 13px 8px; /* Add space between the icons */
-}
+position:absolute;
+top:45%;
+left:12%;
+font-size:1.5vw;
+  }
 
-  /* Styling for the icons */
-.icon {
-    width: 100px; /* Adjust the size as needed */
-}
-
-  /* Styling for the content */
-.content {
+  /* Styling for the icon1 */
+.icon1 {
+    width:15%; 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top:52%;
+    left:10%;
+    z-index: 1;
+}
+
+  /* Styling for the content1 */
+.content1 {
+    position: absolute;
+    top: 54%;
+    left: 12%;
+  font-size: 1.7vw;
+  z-index: 2;
     color: #fff;
-    font-size: 9px;
-    padding: 5px 10px;
-    border-radius: 5px;
 }
-.saturn{
-    display: flex;
-    justify-content: center; /* Horizontally center-align the content */
-    align-items: center; /* Vertically center-align the content */
-    width:100vw;
+/* Styling for icon 2 */
+.icon2 {
+    width:15%; 
+    position: absolute;
+    top:52%;
+    left:26%;
+    z-index: 1;
 }
+  /* Styling for the content2 */
+.content2 {
+    position: absolute;
+    top: 54%;
+    left: 28%;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.7vw;
+}
+/* Explore moons closely */
 .explore-container{
     margin: 0;
     color:black;
-    display: flex;
-    align-items: center;
+    display: flex;         /*for getting inline*/
     justify-content: space-around;
     background-color: rgba(151, 254, 237, 1);
-    font-size: 15px;
+    font-size: 1.5vw;
     font-weight: bold;
-    padding:14px;
 }
-.blue{
-    color:#35A29F;
-    line-height: normal;
-}
-.center-heading{
+/* Styling About Saturn Edge */
+.about{
     text-align: center;
-    font-size:26px;
+    font-size:4.5vw;
     font-weight: 900;
     color:white;
+    padding-top:10%;
     margin-bottom: 0;
 }
-
-.container {
-    display: flex;
-    align-items: center; /* Vertically center items */
-    justify-content: space-around;
+/* Changing the color of text to Blue */
+.blue{
+    color:#35A29F;
+    /* line-height: normal; */
+}
+.about-saturn{
+  color:white;
+  text-align: center;
+  padding:0 20%;
+}
+/* Saturn Services */
+.service{
+  display: flex;
+  /* Vertically center items */
+  justify-content: space-around;
+  padding: 5%;
 }
 
 .text {
-    color: var(--supportive, #FFF);
-    font-family: Codec Cold Trial;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
+  color: var(--supportive, #FFF);
+  font-family: Martel Sans;
+  font-size: 4.5vw;
+  font-weight: 800;
+  margin-bottom: 0;
+  line-height:4.8vw;
 
 }
-
-.image {
-    width:247px;
+/* image of services */
+.service-image {
+  width:33%;
+}
+/* Choose Moon text */
+.choose-moon{
+  text-align: center;
+    font-size:4.5vw;
+    font-weight: 900;
+    color:white;
+    padding:10% 20%;
+    padding-bottom: 0;
+    line-height:5vw;
 }
 .Boxes{
-    display: flex;
-    justify-content: space-around; /* Distribute boxes evenly */
-    align-items: center;
-    width: 100%;
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
-.box {
-    width: 48%; /* Adjust the width as needed */
-    height: 200px;
+/* black box for different types of moons */
+.box{
+   width: 35vw; /* Adjust the width as needed */
+    height:30vw;
     background-color: black;
-    margin:20px;
-    /* border: 1px solid #000; */
     box-sizing: border-box;
+    margin:1vw;
+    position: relative;
 }
-
+/* Images of Moon */
 .moon{
-    display: flex;
-    justify-content: space-between;
-    align-items:center ;
-    width:100%;
-    margin-top: 10px;
+  width:50%;
+  position: absolute;
+  top:15%;
+  left:5%;
 }
-.moon-image{
-    width: 13%; /* Adjust the width as needed */
-    /* max-width: 100%;
-    height: auto; */
+.upcoming{
+ width:100%;
+ height: 100%;
 }
-.moon-image1{
-    width:40%;
+/* Text next to Moon images */
+.box p{
+  position: absolute;
+  left:60%;
+  top:20%;
+  font-family: Martel Sans;
+  font-weight: 800;
+  font-size: 3vw;
+  color:white;
+}
+.fantasy-moon{
+  text-align: center;
+  font-size:4.5vw;
+  font-weight: 900;
+  color:white;
+  padding-top:10%;
+  margin-bottom: 0;
+}
+.slide-moons{
+ display: flex;
+ justify-content: space-between;
+ height: 30vw;
+ /* width:20vw; */
 }
