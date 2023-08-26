@@ -24,24 +24,27 @@ body{
 header {
     width:100%;   /*Giving width of header as 100%*/
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* gap:14px; */
     align-items: center;
     position: absolute;
     top:2%;               /*space from top*/
+    /* margin : 0 10%; */
 }
 .logo img{
     height: 6vw; /* Adjust the size as needed */
+    margin-left: 5vw;
  }
 .nav-links {
     list-style: none;
-    display: flex;
-    gap:14px;
+    display: flex; 
+  gap: 4vw;
 }
 /* Giving styling to navigation links */
 .nav-links a{
     text-decoration: none;
     color:white;
-    font-size: 1.4vw;
+    font-size: 1vw;
 }
 /* on hover change in navigation links */
 .nav-links a:hover{
@@ -50,44 +53,45 @@ header {
 }
 /* Subscribe button */
 .btn {
-    padding: 5px 8px;
+    padding: 1vw 2.5vw;
     color: #fff;
     border: none;
     border-radius: 10px;
     background: var(--text-and-support, #35A29F);
     cursor: pointer;
     font-size: 1.6vw;
+    margin-right: 5vw;
 }
 /* Text on image */
   .saturn{
     position:absolute;
     top:26%;
     left:4%;
-    font-size:5vw;
+    font-size:4vw;
     font-weight: 800;
   }
   /* Text on image */
   .saturn1{
     position:absolute;
-    top:35%;
+    top:33%;
     left:9%;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 800;
   }
   /* text on image */
   .gate{
     text-align: center;
 position:absolute;
-top:45%;
+top:42%;
 left:12%;
-font-size:1.5vw;
+font-size:1.2vw;
   }
 
   /* Styling for the icon1 */
 .icon1 {
-    width:15%; 
+    width:12%; 
     position: absolute;
-    top:52%;
+    top:46%;
     left:10%;
     z-index: 1;
 }
@@ -95,28 +99,28 @@ font-size:1.5vw;
   /* Styling for the content1 */
 .content1 {
     position: absolute;
-    top: 54%;
-    left: 12%;
-  font-size: 1.7vw;
+    top: 47.5%;
+    left: 11.5%;
+  font-size: 1.4vw;
   z-index: 2;
     color: #fff;
 }
 /* Styling for icon 2 */
 .icon2 {
-    width:15%; 
+    width:12%; 
     position: absolute;
-    top:52%;
-    left:26%;
+    top:46%;
+    left:25%;
     z-index: 1;
 }
   /* Styling for the content2 */
 .content2 {
     position: absolute;
-    top: 54%;
-    left: 28%;
+    top: 47.5%;
+    left: 26.5%;
     z-index: 2;
     color: #fff;
-    font-size: 1.7vw;
+    font-size: 1.4vw;
 }
 /* Explore moons closely */
 .explore-container{
@@ -124,6 +128,7 @@ font-size:1.5vw;
     color:black;
     display: flex;         /*for getting inline*/
     justify-content: space-around;
+    flex-wrap: wrap;
     background-color: rgba(151, 254, 237, 1);
     font-size: 1.5vw;
     font-weight: bold;
@@ -131,10 +136,10 @@ font-size:1.5vw;
 /* Styling About Saturn Edge */
 .about{
     text-align: center;
-    font-size:4.5vw;
+    font-size:3.5vw;
     font-weight: 900;
     color:white;
-    padding-top:10%;
+    padding-top:8%;
     margin-bottom: 0;
 }
 /* Changing the color of text to Blue */
@@ -145,7 +150,8 @@ font-size:1.5vw;
 .about-saturn{
   color:white;
   text-align: center;
-  padding:0 20%;
+  font-size: 1.5vw;
+  padding:0 15%;
 }
 /* Saturn Services */
 .service{
@@ -158,7 +164,7 @@ font-size:1.5vw;
 .text {
   color: var(--supportive, #FFF);
   font-family: Martel Sans;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   font-weight: 800;
   margin-bottom: 0;
   line-height:4.8vw;
@@ -171,7 +177,7 @@ font-size:1.5vw;
 /* Choose Moon text */
 .choose-moon{
   text-align: center;
-    font-size:4.5vw;
+    font-size:3.5vw;
     font-weight: 900;
     color:white;
     padding:10% 20%;
@@ -215,15 +221,69 @@ font-size:1.5vw;
 }
 .fantasy-moon{
   text-align: center;
-  font-size:4.5vw;
+  font-size:3.5vw;
   font-weight: 900;
   color:white;
-  padding-top:10%;
+  padding-top:8%;
   margin-bottom: 0;
 }
 .slide-moons{
  display: flex;
  justify-content: space-between;
  height: 30vw;
- /* width:20vw; */
+ margin-bottom: 8%;
+}
+footer{
+  padding:4vw;
+}
+.bottom-text{
+  display: inline-block;
+  color:white;
+  font-size:1vw;
+}
+.bottom-logo{
+  display: inline-block;
+  height: 7vw;
+}
+/* FAQ Section */
+.faq{
+  display: inline;
+  list-style: none;
+  float: right;
+}
+.faq span{
+font-weight: 800;
+color:white;
+font-size:1.2vw;
+}
+.faq a{
+  color:white;
+  font-size:1.1vw;
+  /* line-height: 1vw; */
+  text-decoration: none;
+}
+/* General Section */
+.general{
+  display: inline;
+list-style: none;
+color:white;
+float:right;
+overflow: hidden;
+}
+.general span{
+  font-weight: 800;
+  font-size:1.2vw;
+}
+.general a{
+  text-decoration: none;
+  color:white;
+  font-size:1.1vw;
+  margin:0;
+  padding: 0;
+  /* line-height: 1.2vw; */
+}
+.general li,.faq li{
+ margin: 0;
+ padding: 0;
+ line-height: 1.3vw;
 }
