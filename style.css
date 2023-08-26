@@ -172,9 +172,27 @@ font-size:1.2vw;
   line-height:4.8vw;
 
 }
+.imagination{
+  font-size:2vw;
+  font-style: italic;
+  /* padding-right: 4vw; */
+  /* text-align: center; */
+}
+.text p{
+  line-height:2vw;
+  color:white;
+  font-size:1.5vw;
+  text-align: left;
+  font-weight: 100;
+  padding-right: 4vw;
+}
+.text .solutions{
+  font-weight: 800;
+  /* text-align: center; */
+}
 /* image of services */
 .service-image {
-  width:40%;
+  width:50vw;
 }
 /* Choose Moon text */
 .choose-moon{
@@ -266,7 +284,6 @@ footer{
 list-style: none;
 color:white;
 float:right;
-/* overflow: hidden; */
 }
 .general span{
   font-weight: 800;
@@ -278,7 +295,6 @@ float:right;
   font-size:1.1vw;
   margin:0;
   padding: 0;
-  /* line-height: 1.2vw; */
 }
 /* FAQ Section */
 .faq{
